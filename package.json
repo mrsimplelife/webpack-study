@@ -12,11 +12,13 @@
     "babel": "babel app.js",
     "lint": "eslint ./ --fix",
     "prettier": "prettier app.js --write",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "start": "webpack serve --progress"
   },
   "author": "mrsimplelife",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.9.0",
     "react": "^17.0.1"
   },
@@ -29,12 +31,16 @@
     "@babel/preset-env": "^7.13.8",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
+    "connect-api-mocker": "^1.9.0",
     "css-loader": "^5.1.0",
     "eslint": "^7.20.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.2.0",
     "lite-server": "^2.6.1",
@@ -43,7 +49,8 @@
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.24.2",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "description": ""
 }
