@@ -11,7 +11,8 @@
     "mybabel": "babel app.js --plugins ./my-babel-plugin.js",
     "babel": "babel app.js",
     "lint": "eslint ./ --fix",
-    "prettier": "prettier app.js --write"
+    "prettier": "prettier app.js --write",
+    "postinstall": "husky install"
   },
   "author": "mrsimplelife",
   "license": "ISC",
